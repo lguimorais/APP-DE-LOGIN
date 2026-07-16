@@ -3,15 +3,15 @@
     <img src="/assets/svg/logo.svg" alt="" />
     <h2>{{ title }}</h2>
     <ng-content></ng-content>
-    
+
     <div class="botoesDiv">
-      <button class="primaryBtn">{{ primaryBtnText }}</button>
+      <button class="primaryBtn" (click)="submit()">{{ primaryBtnText }}</button>
       <div class="divider">
         <div></div>
         <span>OR</span>
         <div></div>
       </div>
-      <button class="secondaryBtn">{{ secondaryBtnText }}</button>
+      <button class="secondaryBtn"(click)="navigate()">{{ secondaryBtnText }}</button>
     </div>
   </section>
   <section class="main-section">
