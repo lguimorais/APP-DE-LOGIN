@@ -5,7 +5,10 @@
     <ng-content></ng-content>
 
     <div class="botoesDiv">
-      <button class="primaryBtn" (click)="submit()">{{ primaryBtnText }}</button>
+      <button class="primaryBtn"
+       (click)="submit()"
+       [disabled]="disablePrimaryBtn"
+       >{{ primaryBtnText }}</button>
       <div class="divider">
         <div></div>
         <span>OR</span>
